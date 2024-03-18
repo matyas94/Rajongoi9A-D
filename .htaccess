@@ -39,7 +39,7 @@ Options +SymLinksIfOwnerMatch
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /fooldal.html [L]
+RewriteRule . /index.html [L]
 
 ## Redirect to a URL on the same domain or host
 Redirect 301 "/test1" "/test2"
