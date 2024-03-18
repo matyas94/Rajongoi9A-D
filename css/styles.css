@@ -5966,10 +5966,20 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
 }
+.carousel-orange .carousel-control-prev-icon,
+.carousel-orange .carousel-control-next-icon {
+  filter: invert(44%) sepia(99%) saturate(3089%) hue-rotate(359deg) brightness(100%) contrast(106%);  ;
+}
+.carousel-orange .carousel-indicators [data-bs-target] {
+  background-color: orange;
+}
+.carousel-orange .carousel-caption {
+  color: orange;
+}
 
 .carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
-  filter: invert(1) grayscale(100);
+  filter: invert(100%) grayscale(100%) ;
 }
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #000;
