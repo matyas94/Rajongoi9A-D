@@ -7,7 +7,6 @@
   --bs-pink: #e21e80;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
-  --bs-darker-orange: 
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -11748,9 +11747,10 @@ a.telj-link:hover{
   text-decoration: underline;
 }
 
+/* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 /* Track */
