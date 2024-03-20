@@ -7,6 +7,7 @@
   --bs-pink: #e21e80;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
+  --bs-darker-orange: 
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -11745,4 +11746,25 @@ a.telj-link:hover{
   color: #FFAD70;
   font-size: 57px;
   text-decoration: underline;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bs-secondary);
 }
