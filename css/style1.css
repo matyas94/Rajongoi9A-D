@@ -9,18 +9,19 @@ body {
   min-height: 100vh;
   display: flex;
   background: #fff;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
 }
 .container2 {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
+  position: absolute;
+  width: 800px;
   background: #333333;
   padding: 30px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  left: 550px;
 
 
 }
@@ -228,7 +229,7 @@ select {
 .container1.px-5{
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
+  width: 1500px;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
