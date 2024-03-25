@@ -1,19 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+
 }
 body {
   min-height: 100vh;
   display: flex;
+  background: #fff;
   align-items: center;
   justify-content: center;
-  background: #fff;
 }
-.container {
+.container2 {
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -22,6 +21,8 @@ body {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .heading {
@@ -32,15 +33,15 @@ body {
 }
 label {
   display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
   color: #fff;
 }
 select {
+  height: 50px;
   width: 100%;
   padding: 10px;
   border: none;
-  text-transform: capitalize;
   border-radius: 5px;
   margin-bottom: 20px;
   background: #fff;
@@ -187,15 +188,56 @@ select {
 }
 .score .score-text {
   color: #fff;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 500;
   margin-bottom: 120px;
 }
 
 @media (max-width: 468px) {
-  .container {
+  .container2 {
     min-height: 100vh;
     max-width: 100%;
     border-radius: 0;
   }
+}
+@media (min-width: 576px) {
+  .container-sm, .container1 {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container1 {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container1 {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container1 {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container1 {
+    max-width: 1320px;
+  }
+}
+.container1.px-5{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.hide1{
+  display: none;
+}
+#time{
+  font-size: 16px;
+  font-weight: bold;
 }

@@ -8,9 +8,9 @@ const progress = (value) => {
 };
 
 const startBtn = document.querySelector(".start"),
-  numQuestions = document.querySelector("#num-questions"),
-  category = document.querySelector("#category"),
-  difficulty = document.querySelector("#difficulty"),
+
+
+
   timePerQuestion = document.querySelector("#time"),
   quiz = document.querySelector(".quiz"),
   startScreen = document.querySelector(".start-screen");
@@ -22,11 +22,11 @@ let questions = [],
   timer;
 
 const startQuiz = () => {
-  const num = numQuestions.value,
-    cat = category.value,
-    diff = difficulty.value;
+  const num = 5,
+    cat = 9,
+    diff = "easy";
   loadingAnimation();
-  const url = `http://127.0.0.1:5500/api.json`;
+  const url = `http://127.0.0.1:5500/Rajongoi9A-D/api.json`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -43,11 +43,12 @@ const startQuiz = () => {
 startBtn.addEventListener("click", startQuiz);
 
 const showQuestion = (question) => {
+
   const questionText = document.querySelector(".question"),
     answersWrapper = document.querySelector(".answer-wrapper");
   questionNumber = document.querySelector(".number");
 
-  questionText.innerHTML = question.question;
+
 
   const answers = [
     ...question.incorrect_answers,
@@ -66,7 +67,7 @@ const showQuestion = (question) => {
         `;
   });
 
-  questionNumber.innerHTML = ` Question <span class="current">${
+  questionNumber.innerHTML = ` Kérdés  <span class="current">${
     questions.indexOf(question) + 1
   }</span>
             <span class="total">/${questions.length}</span>`;
@@ -103,10 +104,10 @@ const startTimer = (time) => {
 };
 
 const loadingAnimation = () => {
-  startBtn.innerHTML = "Loading";
+  startBtn.innerHTML = "Betöltés";
   const loadingInterval = setInterval(() => {
     if (startBtn.innerHTML.length === 10) {
-      startBtn.innerHTML = "Loading";
+      startBtn.innerHTML = "Betöltés";
     } else {
       startBtn.innerHTML += ".";
     }
@@ -211,7 +212,3 @@ restartBtn.addEventListener("click", () => {
   window.location.reload();
 });
 
-const playAdudio = (src) => {
-  const audio = new Audio(src);
-  audio.play();
-};
