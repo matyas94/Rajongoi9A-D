@@ -11773,3 +11773,17 @@ a.telj-link:hover{
   padding: 5px;
   align-self: auto;
 }
+
+.koppány{
+  text-decoration: none;
+  color: #4CAF50;
+  
+}
+
+a.koppány:hover{
+  color: #FF69B4;
+}
+
+#koppány2{
+  text-align: center;
+}
