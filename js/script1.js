@@ -76,6 +76,7 @@ const showQuestion = (question) => {
   answersDiv.forEach((answer) => {
     answer.addEventListener("click", () => {
       if (!answer.classList.contains("checked")) {
+        //nigger
         answersDiv.forEach((answer) => {
           answer.classList.remove("selected");
         });
@@ -92,7 +93,7 @@ const showQuestion = (question) => {
 const startTimer = (time) => {
   timer = setInterval(() => {
     if (time === 3) {
-      playAdudio("");
+      //playAdudio("");
     }
     if (time >= 0) {
       progress(time);
@@ -123,6 +124,7 @@ function defineProperty() {
   osccred.style.fontSize = "10px";
   osccred.style.color = "#ccc";
   osccred.style.fontFamily = "sans-serif";
+  //nigger
   osccred.style.padding = "5px";
   osccred.style.background = "#fff";
   osccred.style.borderTopLeftRadius = "5px";
