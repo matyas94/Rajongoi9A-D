@@ -26,7 +26,7 @@ const startQuiz = () => {
     cat = 9,
     diff = "easy";
   loadingAnimation();
-  const url = `http://127.0.0.1:5500/Rajongoi9A-D/api.json`;
+  const url = new RegExp('[^?]+/').exec(location.href) + "api.json";
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
