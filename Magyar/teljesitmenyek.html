@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Template</title>
+        <title>Teljesítmények</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,18 +15,18 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container1 px-5">
-                    <a class="navbar-brand" href="fooldal.html"><span class="fw-bolder text-primary">Fanoldal</span></a>
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Fanoldal</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="fooldal.html">Főoldal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
                             <li class="nav-item"><a class="nav-link" href="teljesitmenyek.html">Teljesítmények</a></li>
                             <li class="nav-item"><a class="nav-link" href="baratai.html">Barátai</a></li>
                             <li class="nav-item"><a class="nav-link" href="kviz.html">Quiz</a></li>
@@ -35,101 +35,146 @@
                 </div>
             </nav>
             <!-- Page Content-->
-            <div class="container1 px-5 my-5">
+            <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Teljesítmények</span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
                         <!-- Experience Section-->
                         <section>
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="#!">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
+                                <h2 class="text-primary fw-bolder mb-0">Politika</h2>
                             </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2019 - Present</div>
-                                                <div class="small fw-bolder">Web Developer</div>
-                                                <div class="small text-muted">Stark Industries</div>
-                                                <div class="small text-muted">Los Angeles, CA</div>
+                            <!-- Carousel -->
+                            <div id="polCarousel" class="carousel carousel-orange slide" data-bs-ride="carousel">
+                            
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#polCarousel" data-bs-slide-to="0" class="active"></button>
+                                  <button type="button" data-bs-target="#polCarousel" data-bs-slide-to="1"></button>
+                                  <button type="button" data-bs-target="#polCarousel" data-bs-slide-to="2"></button>
+                                </div>
+                            
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="/assets/orbanTeljPolElso.jpg" alt="Orbán Viktor pezsgőspohárral a kezében" class="d-block w-100">
+                                    <div class="pb-5"></div>
+                                    <div class="card border-0 rounded-4 mb-5">
+                                        <div class="card-body p-5">
+                                            <div class="row align-items-center gx-5">
+                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                    <div class="bg-light p-4 rounded-4">
+                                                        <!--1998 - 2002-->
+                                                        <div class="text-primary fw-bolder mb-2">1998 - 2002</div>
+                                                        <div class="small fw-bolder">Miniszterelnök</div>
+                                                        <div class="small text-muted">Fidesz</div>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8"><div>Orbán Viktor első kormánya, amit a szavazatok 29,48%-ának megnyerésével alapított, amely 1998 és 2002 között volt hivatalban, fontos időszak volt Magyarország modern történelmében. A kormányzati prioritások között gazdasági reformok és infrastrukturális fejlesztések szerepeltek, amelyek hozzájárultak az ország fejlődéséhez.</div></div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder">SEM Specialist</div>
-                                                <div class="small text-muted">Wayne Enterprises</div>
-                                                <div class="small text-muted">Gotham City, NY</div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="/assets/2006.png" alt="A 2006-os választások eredménye" class="d-block w-100">
+                                    <div class="pb-5"></div>
+                                    <div class="card border-0 rounded-4 mb-5">
+                                        <div class="card-body p-5">
+                                            <div class="row align-items-center gx-5">
+                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                    <div class="bg-light p-4 rounded-4">
+                                                        <!--2002 - 2010-->
+                                                        <div class="text-primary fw-bolder mb-2">2002 - 2010</div>
+                                                        <div class="small fw-bolder">Ellenzéki politikus</div>
+                                                        <div class="small text-muted">Fidesz</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8"><div>Orbán Viktor politikai pályafutása a 2002 és 2010 közötti időszakban kiemelkedő volt Magyarországon. 2002 után az ellenzék vezéreként újjáalakította a Fidesz pártot, és a 2010-es választásokon fölényesen győzve miniszterelnökként került hatalomra. Gazdasági reformokat vezetett be, miközben erősítette a nemzeti identitást és szuverenitást.</div></div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
                                     </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="/assets/orban2022.jpg" alt="Orbán Viktor 2022-ben" class="d-block w-100">
+                                    <div class="pb-5"></div>
+                                    <div class="card border-0 rounded-4 mb-5">
+                                        <div class="card-body p-5">
+                                            <div class="row align-items-center gx-5">
+                                                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                                    <div class="bg-light p-4 rounded-4">
+                                                        <!--2010 - Jelen-->
+                                                        <div class="text-primary fw-bolder mb-2">2010 - Jelen</div>
+                                                        <div class="small fw-bolder">Miniszterelnök</div>
+                                                        <div class="small text-muted">Fidesz</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8"><div>
+                                                    Orbán Viktor második kormánya 2010-ben kezdődött és a mai napig tart. Ez idő alatt több fontos politikai és gazdasági intézkedést hajtottak végre, ami sok vitát kavart mind hazai, mind nemzetközi szinten. Kormányzása alatt Magyarország gazdasági fejlődése és politikai stabilitása egyaránt jelentős változásokon ment keresztül.</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
+                            
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#polCarousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#polCarousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon"></span>
+                                </button>
+                              </div>
+                              
                         </section>
-                        <!-- Education Section-->
+                        <!-- Tanulmányi -->
                         <section>
-                            <h2 class="text-primary fw-bolder mb-4">Education</h2>
-                            <!-- Education Card 1-->
+                            <h2 class="text-primary fw-bolder mb-4">Tanulmányok</h2>
+
+                            <!-- Egyesített -->
                             <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="row card-body p-5  align-items-center">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0 ">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2015 - 2017</div>
+                                                <div class="text-primary fw-bolder mb-2">1977 - 1981</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">Barnett College</div>
-                                                    <div class="small text-muted">Fairfield, NY</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
+                                                    <div class="small fw-bolder">Teleki Blanka Gimnázium és Általános Iskola</div>
+                                                    <div class="small text-muted">Székesfehérvár</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2011 - 2015</div>
+                                                <div class="text-primary fw-bolder mb-2">1981 - 1987</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
+                                                    <div class="small fw-bolder">ELTE</div>
+                                                        <div class="small text-muted">Budapest</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
+                                                    <div class="small text-muted">Jogászdoktor</div>
+                                                    <div class="small text-muted">Jogtudomány</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <div class="text-primary fw-bolder mb-2">1989 - 1990</div>
+                                            <div class="mb-2">
+                                                <div class="small fw-bolder">Pembroke College</div>
+                                                    <div class="small text-muted">Cambridge, Anglia</div>
+                                            </div>
+                                            <div class="fst-italic">
+                                                <div class="small text-muted">Filozófia</div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
+                                </div>
                                 </div>
                             </div>
+
                         </section>
                         <!-- Divider-->
                         <div class="pb-5"></div>
@@ -141,35 +186,12 @@
                                     <!-- Professional skills list-->
                                     <div class="mb-5">
                                         <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Életrajz</span></h3>
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
+                                        <div>
+                                            <p>Orbán Viktor 1963. május 31-én született Székesfehérváron. Fiatal éveiben tehetséges diáknak bizonyult, és számos iskolai versenyen vett részt. 1987-ben jogi diplomát szerzett a budapesti Eötvös Loránd Tudományegyetemen.</p>
+                                            <p>Politikai pályafutását a rendszerváltás idején kezdte, amikor 1988-ban az Ifjúsági Demokrata Fórum (IDF) tagjaként politizálni kezdett. A Fidesz alapító tagja volt, és a párt 1993-ban, az első szabad választások után lett a Magyar Demokrata Fórummal egyesülve a jobbközép irányzat meghatározó alakja.</p>
+                                            <p>Orbán 1998 és 2002 között szolgált Magyarország miniszterelnökének, majd a Fidesz ellenzékbe került. 2010-ben ismételten a miniszterelnöki posztra került, és 2014-ben, 2018-ban, valamint 2022-ben is megerősítették a választók.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -179,19 +201,19 @@
                 </div>
             </div>
         </main>
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
-            <div class="container px-5 my-5">
+                 <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                     <div class="container px-5 my-5">
                 <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Ha már olvastad a <a class="telj-link" href="teljesitmenyek.html">Teljesítmények</a>et, teszteld tudásodat egy kvízben!</h2>
+                    <h2 class="display-4 fw-bolder mb-4">Ha már olvastad a <a class="telj-link" href="baratai.html">Barátai</a>t, teszteld tudásodat egy kvízben!</h2>
                     <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="kviz.html">Teszt</a>
                 </div>
-            </div>
-        </section>
+            </section>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
-            <div class="container1 px-5">
+            <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0"><img src="assets/jeglik.jpeg" alt="" height="50px"> &copy; Győri Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div></div>
+                    <div class="col-auto"><div class="small m-0"><img src="/assets/jeglik.jpeg" alt="" height="50px"> &copy; Győri Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
