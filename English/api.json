@@ -1,1 +1,66 @@
-{"response_code":0,"results":[{"type":"multiple","difficulty":"easy","category":"General Knowledge","question":"Ki az Orbán Viktor legjobb barátja?","correct_answer":"Mészáros Lőrincz","incorrect_answers":["Vlagyimir Putyin","Donald Trump","Xi Jinping"]},{"type":"multiple","difficulty":"easy","category":"General Knowledge","question":"Which American president appears on a one dollar bill?","correct_answer":"George Washington","incorrect_answers":["Thomas Jefferson","Abraham Lincoln","Benjamin Franklin"]},{"type":"multiple","difficulty":"easy","category":"General Knowledge","question":"What nuts are used in the production of marzipan?","correct_answer":"Almonds","incorrect_answers":["Peanuts","Walnuts","Pistachios"]},{"type":"multiple","difficulty":"easy","category":"General Knowledge","question":"What is the profession of Elon Musk&#039;s mom, Maye Musk?","correct_answer":"Model","incorrect_answers":["Professor","Biologist","Musician"]},{"type":"multiple","difficulty":"easy","category":"General Knowledge","question":"The Flag of the European Union has how many stars on it?","correct_answer":"12","incorrect_answers":["10","14","16"]}]}
+
+{
+    "response_code": 0,
+    "results": [
+    {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "Who is the best friend of Viktor Orbán?",
+    "correct_answer": "Lőrinc Mészáros",
+    "incorrect_answers": [
+    "Vladimir Putin",
+    "Donald Trump",
+    "Xi Jinping"
+    ]
+    },
+    {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "Which American president appears on a one dollar bill?",
+    "correct_answer": "George Washington",
+    "incorrect_answers": [
+    "Thomas Jefferson",
+    "Abraham Lincoln",
+    "Benjamin Franklin"
+    ]
+    },
+    {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What nuts are used in the production of marzipan?",
+    "correct_answer": "Almonds",
+    "incorrect_answers": [
+    "Peanuts",
+    "Walnuts",
+    "Pistachios"
+    ]
+    },
+    {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What is the profession of Elon Musk's mom, Maye Musk?",
+    "correct_answer": "Model",
+    "incorrect_answers": [
+    "Professor",
+    "Biologist",
+    "Musician"
+    ]
+    },
+    {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "The Flag of the European Union has how many stars on it?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+    "10",
+    "14",
+    "16"
+    ]
+    }
+    ]
+    }
