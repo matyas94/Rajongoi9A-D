@@ -1,3 +1,4 @@
+
 {
     "response_code": 0,
     "results": [
@@ -5,8 +6,8 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "Ki az Orbán Viktor legjobb barátja?",
-        "correct_answer": "Mészáros Lőrincz",
+        "question": "Who is Viktor Orbán's best friend?",
+        "correct_answer": "Lőrincz Mészáros",
         "incorrect_answers": [
           "Vlagyimir Putyin",
           "Donald Trump",
@@ -17,7 +18,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "Mikor alakította első kormányát?",
+        "question": "When did he form his first government?",
         "correct_answer": "1998",
         "incorrect_answers": [
           "2002",
@@ -29,7 +30,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "Melyik egyetemen szerezte doktori címét?",
+        "question": "Which university did he get his doctorate from?",
         "correct_answer": "ELTE",
         "incorrect_answers": [
           "BME",
@@ -41,7 +42,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "Mikor alakította 2. kormányát?",
+        "question": "When did he form his 2nd government?",
         "correct_answer": "2010",
         "incorrect_answers": [
           "2014",
@@ -53,7 +54,7 @@
         "type": "multiple",
         "difficulty": "easy",
         "category": "General Knowledge",
-        "question": "Mikor kezdett el politizálni?",
+        "question": "When did he start to get involved in politics?",
         "correct_answer": "1988",
         "incorrect_answers": [
           "1984",
