@@ -48,7 +48,7 @@ const showQuestion = (question) => {
     answersWrapper = document.querySelector(".answer-wrapper");
   questionNumber = document.querySelector(".number");
 
-
+questionText.innerHTML = question.question;
 
   const answers = [
     ...question.incorrect_answers,
