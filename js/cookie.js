@@ -1,9 +1,9 @@
-function acceptCookies(){
+function AcceptCookies(){
     setCookie("acceptedCookies", "true", 180);
     document.getElementById("cookieBanner").classList.add("hidden");
 }
 
-function denyCookies(){
+function DenyCookies(){
     setCookie("acceptedCookies", "false", 3);
     document.getElementById("cookieBanner").classList.add("hidden");
 }
@@ -31,7 +31,7 @@ function getCookie(cname) {
     return "";
   }
 
-function showCookieBanner(){
+function ShowCookieBanner(){
     if(getCookie("acceptedCookies") == ""){
         document.getElementById("cookieBanner").classList.remove("hidden");
     }
