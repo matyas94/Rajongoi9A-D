@@ -11787,3 +11787,7 @@ a.koppány:hover{
 #koppány2{
   text-align: center;
 }
+
+.vh-10{
+  height: 10vh !important;
+}
