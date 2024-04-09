@@ -2838,12 +2838,12 @@ textarea.form-control-lg {
   --bs-btn-bg: #ff5b00;
   --bs-btn-border-color: #ff5b00;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #ff5b00;
-  --bs-btn-hover-border-color: #ff4800;
+  --bs-btn-hover-bg: #ea4814;
+  --bs-btn-hover-border-color: #ea4814;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #ff4800;
-  --bs-btn-active-border-color: #ff4800;
+  --bs-btn-active-bg: #cf3e0f;
+  --bs-btn-active-border-color: #cf3e0f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #ff762a;
@@ -2938,10 +2938,10 @@ textarea.form-control-lg {
 .btn-light {
   --bs-btn-color: #000;
   --bs-btn-bg: #f8f9fa;
-  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-border-color: #babbbc;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #d3d4d5;
-  --bs-btn-hover-border-color: #c6c7c8;
+  --bs-btn-hover-border-color: #babbbc;
   --bs-btn-focus-shadow-rgb: 211, 212, 213;
   --bs-btn-active-color: #000;
   --bs-btn-active-bg: #c6c7c8;
@@ -11788,6 +11788,20 @@ a.koppány:hover{
   text-align: center;
 }
 
-.vh-10{
-  height: 10vh !important;
+#cookieBanner{
+  position: fixed;
+  left: 2%;
+  bottom: 6%;
+}
+
+.bg-opacity-90{
+  --bs-bg-opacity: 90% !important;
+}
+
+.border-opacity-65{
+  --bs-border-opacity: 65% !important;
+}
+
+.hidden{
+  display: none;
 }
