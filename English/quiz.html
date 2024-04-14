@@ -48,62 +48,64 @@
                 </div>
             </nav>
             <!-- Page content-->
-            <div class="container2">
-                <div class="start-screen">
-                  <h1 class="heading">Quiz</h1>
-                  <h2 class="heading2">You can achieve the maximum score on this quiz by reading through our website! Use the <a href="friends.html">Friends</a> and <a href="achievements.html">Achievements</a> pages!</h2>
-                  <div class="settings">
-                    <!--<img src="assets/quiz.png" alt="quiz" class="kep">-->
-                    <label for="time">Choose time between questions:</label>
-                    <select id="time">
-                      <option value="10">10 seconds</option>
-                      <option value="15">15 seconds</option>
-                      <option value="20">20 seconds</option>
-                      <option value="25">25 seconds</option>
-                      <option value="30">30 seconds</option>
-                      <option value="60">60 seconds</option>
-                    </select>
+            <div class="d-flex justify-content-center">
+              <div class="container2 col-sm-5">
+                  <div class="start-screen">
+                    <h1 class="heading">Quiz</h1>
+                    <h2 class="heading2">You can achieve the maximum score on this quiz by reading through our website! Use the <a href="friends.html">Friends</a> and <a href="achievements.html">Achievements</a> pages!</h2>
+                    <div class="settings">
+                      <!--<img src="assets/quiz.png" alt="quiz" class="kep">-->
+                      <label for="time">Choose time between questions:</label>
+                      <select id="time">
+                        <option value="10">10 seconds</option>
+                        <option value="15">15 seconds</option>
+                        <option value="20">20 seconds</option>
+                        <option value="25">25 seconds</option>
+                        <option value="30">30 seconds</option>
+                        <option value="60">60 seconds</option>
+                      </select>
+                    </div>
+                    <button class="btn1 start">Start</button>
                   </div>
-                  <button class="btn1 start">Start</button>
+                  <div class="quiz hide">
+                    <div class="timer">
+                      <div class="progress">
+                        <div class="progress-bar"></div>
+                        <span class="progress-text"></span>
+                      </div>
+                    </div>
+                    <div class="question-wrapper">
+                      <div class="number">
+                        " Question "
+                        <span class="current">1</span>
+                        <span class="total">/10</span>
+                      </div>
+                      <div class="question"></div>
+                    </div>
+                    <div class="answer-wrapper">
+                      <div class="answer selected">
+                        <span class="text">answer</span>
+                        <span class="checkbox">
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <button class="btn1 submit" disabled>Submit</button>
+                    <button class="btn1 next">Next</button>
+                  </div>
+                  <div class="end-screen hide">
+                    <h1 class="heading">Quiz</h1>
+                    <div class="score">
+                      <span class="score-text">Your score:</span>
+                      <div>
+                        <span class="final-score">0</span>
+                        <span class="total-score">/10</span>
+                      </div>
+                    </div>
+                    <button class="btn1 restart">Restart</button>
+                  </div>
                 </div>
-                <div class="quiz hide">
-                  <div class="timer">
-                    <div class="progress">
-                      <div class="progress-bar"></div>
-                      <span class="progress-text"></span>
-                    </div>
-                  </div>
-                  <div class="question-wrapper">
-                    <div class="number">
-                      " Question " 
-                      <span class="current">1</span>
-                      <span class="total">/10</span>
-                    </div>
-                    <div class="question"></div>
-                  </div>
-                  <div class="answer-wrapper">
-                    <div class="answer selected">
-                      <span class="text">answer</span>
-                      <span class="checkbox">
-                        <i class="fas fa-check"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <button class="btn1 submit" disabled>Submit</button>
-                  <button class="btn1 next">Next</button>
-                </div>
-                <div class="end-screen hide">
-                  <h1 class="heading">Quiz</h1>
-                  <div class="score">
-                    <span class="score-text">Your score:</span>
-                    <div>
-                      <span class="final-score">0</span>
-                      <span class="total-score">/10</span>
-                    </div>
-                  </div>
-                  <button class="btn1 restart">Restart</button>
-                </div>
-              </div>
+            </div>
           
               <script src="/js/script1.js"></script>
             <a href=""> </a>
