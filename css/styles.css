@@ -629,6 +629,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  position: inherit;
 }
 
 @media (min-width: 576px) {
@@ -11792,6 +11793,7 @@ a.koppány:hover{
   position: fixed;
   left: 2%;
   bottom: 6%;
+  z-index: 10;
 }
 
 .bg-opacity-90{
