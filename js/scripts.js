@@ -8,7 +8,7 @@ function ChLang(lang, destination){
 }
 
 function Root(){
-    return location.protocol + '//' + location.host;
+    return location.protocol + '//' + location.host + "/Rajongoi9A-D";
 }
 
 function AutomaticRedirectFromRoot(){
