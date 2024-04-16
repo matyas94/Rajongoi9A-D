@@ -17,7 +17,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/Rajongoi9A-D/css/styles.css" rel="stylesheet" />
     </head>
-    <body onload='ShowCookieBanner()' class="d-flex flex-column h-100">
+    <body onload="ShowCookieBanner()" class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -31,7 +31,7 @@
                             <li class="nav-item"><a class="nav-link" href="baratai.html">Barátai</a></li>
                             <li class="nav-item"><a class="nav-link" href="kviz.html">Kvíz</a></li>
                             <li class="nav-item"><a class="nav-link" href="nevjegy.html">Rólunk</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#" onclick=" event.preventDefault();ChLang('English', 'mainpage.html'); event.preventDefault()"><img src="/Rajongoi9A-D/assets/images.jpg" alt="English" height="25px" title="English"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" onclick=" event.preventDefault();ChLang('English', 'mainpage.html'); event.preventDefault()"><img src="/Rajongoi9A-D/assets/images.jpg" alt="English" height="25" title="English"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -212,7 +212,7 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container1 px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0"><a href="https://jedlik.eu/" target="_blank"><img src="/Rajongoi9A-D/assets/jeglik.jpeg" alt="" height="50px"></a> &copy; Győri Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div></div>
+                    <div class="col-auto"><div class="small m-0"><a href="https://jedlik.eu/" target="_blank"><img src="/Rajongoi9A-D/assets/jeglik.jpeg" alt="" height="50"></a> &copy; Győri Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
@@ -230,20 +230,23 @@
         <!--Cookie banner-->
         <div class="col-lg-4 bg-white p-3 border border-2 border-primary rounded-4 bg-opacity-90 border-opacity-65 hidden" id="cookieBanner">
             <div class="row">
-                <div class="col-12">
+                    <div class="col-sm-3 d-flex"  >
+                        <img class="align-self-center m-auto" alt="cookie" src="/Rajongoi9A-D/assets/cookie.png">
+                    </div>
+                <div class="col-lg-8">
                     <h3>Ez a weboldal cookiekat használ.</h3>
                     <p>Ez a weboldal az ön által választott nyelv megjegyzésére cookiekat használ.<br>Kérjük a weboldal teljes működése érdekében fogadja el a cookiekat.</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center gap-3">
                 <div class="col-sm-4">
-                    <button type="button" onclick='DenyCookies()' class="btn btn-light min-width-25 w-100" >Elutasítom</button>
+                    <button type="button" onclick="DenyCookies()" class="btn btn-light min-width-25 w-100" >Elutasítom</button>
                 </div>
                 <div class="col-sm-4">
-                    <button type="button" onclick='AcceptCookies()' class="btn btn-primary min-width-25 w-100">Elfogadom</button>
+                    <button type="button" onclick="AcceptCookies()" class="btn btn-primary min-width-25 w-100">Elfogadom</button>
                 </div>
             </div>
-        </div>
+    </div>
         <script src="/Rajongoi9A-D/js/cookie.js"></script>
         <script src="/Rajongoi9A-D/js/scripts.js"></script>
     </body>
