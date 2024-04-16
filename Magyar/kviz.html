@@ -1,158 +1,171 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>Kvíz: Orbán Viktor</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="/Rajongoi9A-D/assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/Rajongoi9A-D/css/styles.css" rel="stylesheet" />
-        <link href="/Rajongoi9A-D/css/style1.css" rel="stylesheet" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
 
-    </head>
-    <body onload='ShowCookieBanner()' class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container1 px-5">
-                    <a class="navbar-brand" href="fooldal.html"><span class="fw-bolder text-primary">Fanoldal</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="fooldal.html">Főoldal</a></li>
-                            <li class="nav-item"><a class="nav-link" href="teljesitmenyek.html">Teljesítmények</a></li>
-                            <li class="nav-item"><a class="nav-link" href="baratai.html">Barátai</a></li>
-                            <li class="nav-item"><a class="nav-link" href="kviz.html">Kvíz</a></li>
-                            <li class="nav-item"><a class="nav-link" href="nevjegy.html">Rólunk</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault(); ChLang('English', 'quiz.html');"><img src="/Rajongoi9A-D/assets/images.jpg" alt="English" height="25px" title="English"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Page content-->
-            <div class="d-flex justify-content-center">
-              <div class="container2 col-sm-5">
-                  <div class="start-screen">
-                    <h1 class="heading">Kvíz</h1>
-                    <h2 class="heading2">Ezt a kvízt az oldalunk végigolvasásával lehet maximum pontra megcsinálni! Használd a <a href="baratai.html">Barátai</a> és <a href="teljesitmenyek.html">Teljesítmények</a> lapokat!</h2>
-                    <div class="settings">
-                      <label for="time">Válasszon időt a kérdések között:</label>
-                      <select id="time">
-                        <option value="10">10 másodperc</option>
-                        <option value="15">15 másodperc</option>
-                        <option value="20">20 másodperc</option>
-                        <option value="25">25 másodperc</option>
-                        <option value="30">30 másodperc</option>
-                        <option value="60">60 másodperc</option>
-                      </select>
-                    </div>
-                    <button class="btn1 start">Kezdés</button>
-                  </div>
-                  <div class="quiz hide">
-                    <div class="timer">
-                      <div class="progress">
-                        <div class="progress-bar"></div>
-                        <span class="progress-text"></span>
-                      </div>
-                    </div>
-                    <div class="question-wrapper">
-                      <div class="number">
-                        " Kérdés "
-                        <span class="current">1</span>
-                        <span class="total">/10</span>
-                      </div>
-                      <div class="question"></div>
-                    </div>
-                    <div class="answer-wrapper">
-                      <div class="answer selected">
-                        <span class="text">válasz</span>
-                        <span class="checkbox">
-                          <i class="fas fa-check"></i>
-                        </span>
-                      </div>
-                    </div>
-                    <button class="btn1 submit" disabled>Beküldés</button>
-                    <button class="btn1 next">Következő</button>
-                  </div>
-                  <div class="end-screen hide">
-                    <h1 class="heading">Kvíz</h1>
-                    <div class="score">
-                      <span class="score-text">Végeredményed:</span>
-                      <div>
-                        <span class="final-score">0</span>
-                        <span class="total-score">/10</span>
-                      </div>
-                    </div>
-                    <button class="btn1 restart">Újrakezdés</button>
-                  </div>
-              </div>
-            </div>
-          
-            <script src="/Rajongoi9A-D/js/script1.js"></script>
-            <a href=""> </a>
-            <a href=""> </a>
-        </main>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content />
+  <meta name="author" content />
+  <title>Kvíz: Orbán Viktor</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="/Rajongoi9A-D/assets/favicon.ico" />
+  <!-- Custom Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/Rajongoi9A-D/css/styles.css" rel="stylesheet" />
+  <link href="/Rajongoi9A-D/css/style1.css" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-          <div class="container1 px-5">
-              <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                  <div class="col-auto"><div class="small m-0"><a href="https://jedlik.eu/" target="_blank"><img src="/Rajongoi9A-D/assets/jeglik.jpeg" alt="" height="50px"></a> &copy; Győri Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div></div>
-                  <div class="col-auto">
-                      <a class="small" href="#!">Privacy</a>
-                      <span class="mx-1">&middot;</span>
-                      <a class="small" href="#!">Terms</a>
-                      <span class="mx-1">&middot;</span>
-  <a class="small" href="mailto:marton.matyas@students.jedlik.eu,szeri.martin@students.jedlik.eu,olah.balazs@students.jedlik.eu">Contact</a>
-                  </div>
-              </div>
-          </div>
-      </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/Rajongoi9A-D/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <!--Cookie banner-->
-              <div class="col-lg-4 bg-white p-3 border border-2 border-primary rounded-4 bg-opacity-90 border-opacity-65 hidden" id="cookieBanner">
-                <div class="row">
-                    <div class="col-12">
-                        <h3>Ez a weboldal cookiekat használ.</h3>
-                        <p>Ez a weboldal az ön által választott nyelv megjegyzésére cookiekat használ.<br>Kérjük a weboldal teljes működése érdekében fogadja el a cookiekat.</p>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center gap-3">
-                    <div class="col-sm-4">
-                        <button type="button" onclick='DenyCookies()' class="btn btn-light min-width-25 w-100" >Elutasítom</button>
-                    </div>
-                    <div class="col-sm-4">
-                        <button type="button" onclick='AcceptCookies()' class="btn btn-primary min-width-25 w-100">Elfogadom</button>
-                    </div>
-                </div>
+</head>
+
+<body onload='ShowCookieBanner()' class="d-flex flex-column">
+  <main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container1 px-5">
+        <a class="navbar-brand" href="fooldal.html"><span class="fw-bolder text-primary">Fanoldal</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+            <li class="nav-item"><a class="nav-link" href="fooldal.html">Főoldal</a></li>
+            <li class="nav-item"><a class="nav-link" href="teljesitmenyek.html">Teljesítmények</a></li>
+            <li class="nav-item"><a class="nav-link" href="baratai.html">Barátai</a></li>
+            <li class="nav-item"><a class="nav-link" href="kviz.html">Kvíz</a></li>
+            <li class="nav-item"><a class="nav-link" href="nevjegy.html">Rólunk</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"
+                onclick="event.preventDefault(); ChLang('English', 'quiz.html');"><img
+                  src="/Rajongoi9A-D/assets/images.jpg" alt="English" height="25px" title="English"></a></li>
+          </ul>
         </div>
-        <script src="/Rajongoi9A-D/js/cookie.js"></script>
-        <script src="/Rajongoi9A-D/js/scripts.js"></script>
-    </body>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="d-flex justify-content-center">
+      <div class="container2 col-sm-5">
+        <div class="start-screen">
+          <h1 class="heading">Kvíz</h1>
+          <h2 class="heading2">Ezt a kvízt az oldalunk végigolvasásával lehet maximum pontra megcsinálni! Használd a <a
+              href="baratai.html">Barátai</a> és <a href="teljesitmenyek.html">Teljesítmények</a> lapokat!</h2>
+          <div class="settings">
+            <label for="time">Válasszon időt a kérdések között:</label>
+            <select id="time">
+              <option value="10">10 másodperc</option>
+              <option value="15">15 másodperc</option>
+              <option value="20">20 másodperc</option>
+              <option value="25">25 másodperc</option>
+              <option value="30">30 másodperc</option>
+              <option value="60">60 másodperc</option>
+            </select>
+          </div>
+          <button class="btn1 start">Kezdés</button>
+        </div>
+        <div class="quiz hide">
+          <div class="timer">
+            <div class="progress">
+              <div class="progress-bar"></div>
+              <span class="progress-text"></span>
+            </div>
+          </div>
+          <div class="question-wrapper">
+            <div class="number">
+              " Kérdés "
+              <span class="current">1</span>
+              <span class="total">/10</span>
+            </div>
+            <div class="question"></div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="answer selected">
+              <span class="text">válasz</span>
+              <span class="checkbox">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+          </div>
+          <button class="btn1 submit" disabled>Beküldés</button>
+          <button class="btn1 next">Következő</button>
+        </div>
+        <div class="end-screen hide">
+          <h1 class="heading">Kvíz</h1>
+          <div class="score">
+            <span class="score-text">Végeredményed:</span>
+            <div>
+              <span class="final-score">0</span>
+              <span class="total-score">/10</span>
+            </div>
+          </div>
+          <button class="btn1 restart">Újrakezdés</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Rajongoi9A-D/js/script1.js"></script>
+    <a href=""> </a>
+    <a href=""> </a>
+  </main>
+
+  <!-- Footer-->
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container1 px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0"><a href="https://jedlik.eu/" target="_blank"><img
+                src="/Rajongoi9A-D/assets/jeglik.jpeg" alt="" height="50px"></a> &copy; Győri Szakképzési Centrum Jedlik
+            Ányos Gépipari és Informatikai Technikum és Kollégium</div>
+        </div>
+        <div class="col-auto">
+          <a class="small" href="#!">Privacy</a>
+          <span class="mx-1">&middot;</span>
+          <a class="small" href="#!">Terms</a>
+          <span class="mx-1">&middot;</span>
+          <a class="small"
+            href="mailto:marton.matyas@students.jedlik.eu,szeri.martin@students.jedlik.eu,olah.balazs@students.jedlik.eu">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/Rajongoi9A-D/js/scripts.js"></script>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <!-- * *                               SB Forms JS                               * *-->
+  <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  <!--Cookie banner-->
+  <div class="col-lg-4 bg-white p-3 border border-2 border-primary rounded-4 bg-opacity-90 border-opacity-65 hidden"
+    id="cookieBanner">
+    <div class="row">
+      <div class="col-12">
+        <h3>Ez a weboldal cookiekat használ.</h3>
+        <p>Ez a weboldal az ön által választott nyelv megjegyzésére cookiekat használ.<br>Kérjük a weboldal teljes
+          működése érdekében fogadja el a cookiekat.</p>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center gap-3">
+      <div class="col-sm-4">
+        <button type="button" onclick='DenyCookies()' class="btn btn-light min-width-25 w-100">Elutasítom</button>
+      </div>
+      <div class="col-sm-4">
+        <button type="button" onclick='AcceptCookies()' class="btn btn-primary min-width-25 w-100">Elfogadom</button>
+      </div>
+    </div>
+  </div>
+  <script src="/Rajongoi9A-D/js/cookie.js"></script>
+  <script src="/Rajongoi9A-D/js/scripts.js"></script>
+</body>
+
 </html>

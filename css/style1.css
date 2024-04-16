@@ -13,10 +13,11 @@ body {
   align-items: center;*/
 
 }
+
 .container2 {
   position: relative;
   background: #333333;
-  padding:  4vw 4vh;
+  padding: 4vw 4vh;
   overflow: hidden;
   border-radius: 1vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -33,28 +34,33 @@ body {
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .heading2 {
   text-align: center;
   font-size: 30px;
   color: #fff;
   margin-bottom: 50px;
 }
-.heading2 :link{
+
+.heading2 :link {
   color: #eb8100;
   text-decoration: none;
   font-weight: bold;
 }
-.heading2 :visited{
+
+.heading2 :visited {
   color: #eb8100;
   text-decoration: none;
   font-weight: bold;
 }
+
 label {
   display: block;
   font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
 }
+
 select {
   height: 50px;
   width: 100%;
@@ -66,12 +72,15 @@ select {
   color: #fd8100;
   font-size: 14px;
 }
+
 .start-screen .btn1 {
   margin-top: 50px;
 }
+
 .hide {
   display: none;
 }
+
 .timer {
   width: 100%;
   height: 100px;
@@ -81,6 +90,7 @@ select {
   flex-direction: column;
   margin-bottom: 30px;
 }
+
 .timer .progress {
   position: relative;
   width: 100%;
@@ -91,6 +101,7 @@ select {
   margin-bottom: 10px;
   border: 3px solid #fff;
 }
+
 .timer .progress .progress-bar {
   width: 100%;
   height: 100%;
@@ -99,6 +110,7 @@ select {
   background: linear-gradient(to right, #fd8100, #ea4814);
   transition: 1s linear;
 }
+
 .timer .progress .progress-text {
   position: absolute;
   top: 50%;
@@ -115,10 +127,12 @@ select {
   font-weight: 500;
   margin-bottom: 20px;
 }
+
 .question-wrapper .number .total {
   color: #fff;
   font-size: 18px;
 }
+
 .question-wrapper .question {
   color: #fff;
   font-size: 20px;
@@ -140,6 +154,7 @@ select {
   cursor: pointer;
   transition: 0.3s linear;
 }
+
 .answer .checkbox {
   width: 20px;
   height: 20px;
@@ -150,30 +165,37 @@ select {
   justify-content: center;
   transition: all 0.3s;
 }
+
 .answer .checkbox i {
   color: #fff;
   font-size: 10px;
   opacity: 0;
   transition: all 0.3s;
 }
+
 .answer:hover:not(.checked) .checkbox,
 .answer.selected .checkbox {
   background-color: #fd8100;
   border-color: #fff;
 }
+
 .answer.selected .checkbox i {
   opacity: 1;
 }
+
 .answer.correct {
-    border-color: #0cef2a;
+  border-color: #0cef2a;
 }
+
 .answer.wrong {
   border-color: #fc3939;
 }
+
 .question-wrapper,
 .answer-wrapper {
   margin-bottom: 50px;
 }
+
 .btn1 {
   width: 100%;
   height: 60px;
@@ -186,13 +208,16 @@ select {
   cursor: pointer;
   transition: 0.3s linear;
 }
+
 .btn1:hover {
   background: #000000;
 }
+
 .btn1:disabled {
   background: #ea4814;
   cursor: not-allowed;
 }
+
 .btn1.next {
   display: none;
 }
@@ -204,6 +229,7 @@ select {
   margin-bottom: 80px;
   text-align: center;
 }
+
 .score .score-text {
   color: #fff;
   font-size: 26px;
@@ -218,31 +244,67 @@ select {
     border-radius: 0;
   }
 }
+
 @media (min-width: 576px) {
-  .container-sm, .container1, .container2, .container {
+
+  .container-sm,
+  .container1,
+  .container2,
+  .container {
     max-width: 540px;
   }
 }
+
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container1, .container2, .container {
+
+  .container-md,
+  .container-sm,
+  .container1,
+  .container2,
+  .container {
     max-width: 720px;
   }
 }
+
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container1, .container2, .container {
+
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container1,
+  .container2,
+  .container {
     max-width: 960px;
   }
 }
+
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container1, .container2, .container {
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container1,
+  .container2,
+  .container {
     max-width: 1140px;
   }
 }
+
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container1, .container2, .container {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container1,
+  .container2,
+  .container {
     max-width: 1320px;
   }
 }
+
 /*.container1.px-5{
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -252,13 +314,15 @@ select {
   margin-right: auto;
   margin-left: auto;
 }*/
-.hide1{
+.hide1 {
   display: none;
 }
-#time{
+
+#time {
   font-size: 16px;
   font-weight: bold;
 }
+
 /*.sec{
   top: -5000px;
 }*/
@@ -266,6 +330,7 @@ select {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
+
 /*.content{
   position: fixed;
   bottom: 100px;
