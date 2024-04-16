@@ -1,65 +1,65 @@
 {
-    "response_code": 0,
-    "results": [
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Ki az Orbán Viktor legjobb barátja?",
-        "correct_answer": "Mészáros Lőrincz",
-        "incorrect_answers": [
-          "Vlagyimir Putyin",
-          "Donald Trump",
-          "Xi Jinping"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Mikor alakította első kormányát?",
-        "correct_answer": "1998",
-        "incorrect_answers": [
-          "2002",
-          "1994",
-          "1989"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Melyik egyetemen szerezte doktori címét?",
-        "correct_answer": "ELTE",
-        "incorrect_answers": [
-          "BME",
-          "SZTE",
-          "CORVINUS"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Mikor alakította 2. kormányát?",
-        "correct_answer": "2010",
-        "incorrect_answers": [
-          "2014",
-          "1998",
-          "2008"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Mikor kezdett el politizálni?",
-        "correct_answer": "1988",
-        "incorrect_answers": [
-          "1984",
-          "2002",
-          "1980"
-        ]
-      }
-    ]
-  }
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Ki az Orbán Viktor legjobb barátja?",
+      "correct_answer": "Mészáros Lőrincz",
+      "incorrect_answers": [
+        "Vlagyimir Putyin",
+        "Donald Trump",
+        "Xi Jinping"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Mikor alakította első kormányát?",
+      "correct_answer": "1998",
+      "incorrect_answers": [
+        "2002",
+        "1994",
+        "1989"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Melyik egyetemen szerezte doktori címét?",
+      "correct_answer": "ELTE",
+      "incorrect_answers": [
+        "BME",
+        "SZTE",
+        "CORVINUS"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Mikor alakította 2. kormányát?",
+      "correct_answer": "2010",
+      "incorrect_answers": [
+        "2014",
+        "1998",
+        "2008"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Mikor kezdett el politizálni?",
+      "correct_answer": "1988",
+      "incorrect_answers": [
+        "1984",
+        "2002",
+        "1980"
+      ]
+    }
+  ]
+}
