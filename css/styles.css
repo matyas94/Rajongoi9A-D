@@ -11775,20 +11775,6 @@ a.telj-link:hover{
   align-self: auto;
 }
 
-.koppány{
-  text-decoration: none;
-  color: #4CAF50;
-  
-}
-
-a.koppány:hover{
-  color: #FF69B4;
-}
-
-#koppány2{
-  text-align: center;
-}
-
 #cookieBanner{
   position: fixed;
   left: 2%;
