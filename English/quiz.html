@@ -26,146 +26,136 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</head>
+    </head>
+    <body onload="ShowCookieBanner()" class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container1 px-5">
+                    <a class="navbar-brand" href="mainpage.html"><span class="fw-bolder text-primary">Fanpage</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="mainpage.html">Homepage</a></li>
+                            <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+                            <li class="nav-item"><a class="nav-link" href="friends.html">Friends</a></li>
+                            <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                            <li class="nav-item"><a class="nav-link" href="creators.html">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault(); ChLang('Magyar', 'kviz.html');"><img src="/Rajongoi9A-D/assets/magyar.png" alt="Magyar" height="25" title="Magyar"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="d-flex justify-content-center">
+              <div class="container2 col-sm-5">
+                  <div class="start-screen">
+                    <h1 class="heading">Quiz</h1>
+                    <h2 class="heading2">You can achieve the maximum score on this quiz by reading through our website! Use the <a href="friends.html">Friends</a> and <a href="achievements.html">Achievements</a> pages!</h2>
+                    <div class="settings">
+                      <!--<img src="assets/quiz.png" alt="quiz" class="kep">-->
+                      <label for="time">Choose time between questions:</label>
+                      <select id="time">
+                        <option value="10">10 seconds</option>
+                        <option value="15">15 seconds</option>
+                        <option value="20">20 seconds</option>
+                        <option value="25">25 seconds</option>
+                        <option value="30">30 seconds</option>
+                        <option value="60">60 seconds</option>
+                      </select>
+                    </div>
+                    <button class="btn1 start">Start</button>
+                  </div>
+                  <div class="quiz hide">
+                    <div class="timer">
+                      <div class="progress">
+                        <div class="progress-bar"></div>
+                        <span class="progress-text"></span>
+                      </div>
+                    </div>
+                    <div class="question-wrapper">
+                      <div class="number">
+                        " Question "
+                        <span class="current">1</span>
+                        <span class="total">/10</span>
+                      </div>
+                      <div class="question"></div>
+                    </div>
+                    <div class="answer-wrapper">
+                      <div class="answer selected">
+                        <span class="text">answer</span>
+                        <span class="checkbox">
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <button class="btn1 submit" disabled>Submit</button>
+                    <button class="btn1 next">Next</button>
+                  </div>
+                  <div class="end-screen hide">
+                    <h1 class="heading">Quiz</h1>
+                    <div class="score">
+                      <span class="score-text">Your score:</span>
+                      <div>
+                        <span class="final-score">0</span>
+                        <span class="total-score">/10</span>
+                      </div>
+                    </div>
+                    <button class="btn1 restart">Restart</button>
+                  </div>
+                </div>
+            </div>
+          
+              <script src="/Rajongoi9A-D/js/script1.js"></script>
+            <a href=""> </a>
+            <a href=""> </a>
+        </main>
 
-<body onload="ShowCookieBanner()" class="d-flex flex-column">
-  <main class="flex-shrink-0">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-      <div class="container1 px-5">
-        <a class="navbar-brand" href="mainpage.html"><span class="fw-bolder text-primary">Fanpage</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-            <li class="nav-item"><a class="nav-link" href="mainpage.html">Homepage</a></li>
-            <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-            <li class="nav-item"><a class="nav-link" href="friends.html">Friends</a></li>
-            <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
-            <li class="nav-item"><a class="nav-link" href="creators.html">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#"
-                onclick="event.preventDefault(); ChLang('Magyar', 'kviz.html');"><img
-                  src="/Rajongoi9A-D/assets/magyar.png" alt="Magyar" height="25px" title="Magyar"></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Page content-->
-    <div class="d-flex justify-content-center">
-      <div class="container2 col-sm-5">
-        <div class="start-screen">
-          <h1 class="heading">Quiz</h1>
-          <h2 class="heading2">You can achieve the maximum score on this quiz by reading through our website! Use the <a
-              href="friends.html">Friends</a> and <a href="achievements.html">Achievements</a> pages!</h2>
-          <div class="settings">
-            <!--<img src="assets/quiz.png" alt="quiz" class="kep">-->
-            <label for="time">Choose time between questions:</label>
-            <select id="time">
-              <option value="10">10 seconds</option>
-              <option value="15">15 seconds</option>
-              <option value="20">20 seconds</option>
-              <option value="25">25 seconds</option>
-              <option value="30">30 seconds</option>
-              <option value="60">60 seconds</option>
-            </select>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+          <div class="container1 px-5">
+              <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                  <div class="col-auto"><div class="small m-0"><img src="/Rajongoi9A-D/assets/jeglik.jpeg" alt="" height="50"> &copy; Győri Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div></div>
+                  <div class="col-auto">
+                      <a class="small" href="#!">Privacy</a>
+                      <span class="mx-1">&middot;</span>
+                      <a class="small" href="#!">Terms</a>
+                      <span class="mx-1">&middot;</span>
+  <a class="small" href="mailto:marton.matyas@students.jedlik.eu,szeri.martin@students.jedlik.eu,olah.balazs@students.jedlik.eu">Contact</a>
+                  </div>
+              </div>
           </div>
-          <button class="btn1 start">Start</button>
-        </div>
-        <div class="quiz hide">
-          <div class="timer">
-            <div class="progress">
-              <div class="progress-bar"></div>
-              <span class="progress-text"></span>
-            </div>
+      </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/Rajongoi9A-D/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--Cookie banner-->
+        <div class="col-lg-4 bg-white p-3 border border-2 border-primary rounded-4 bg-opacity-90 border-opacity-65 hidden" id="cookieBanner">
+          <div class="row">
+                  <div class="col-sm-3 d-flex"  >
+                      <img class="align-self-center m-auto" alt="cookie" src="/Rajongoi9A-D/assets/cookie.png">
+                  </div>
+              <div class="col-lg-8">
+                <h3>This website uses cookies.</h3>
+                <p>This website uses cookies to remember your language choice. Please accept the cookies for the full functionality of the website.</p>
+              </div>
           </div>
-          <div class="question-wrapper">
-            <div class="number">
-              " Question "
-              <span class="current">1</span>
-              <span class="total">/10</span>
-            </div>
-            <div class="question"></div>
+          <div class="row d-flex justify-content-center gap-3">
+              <div class="col-sm-4">
+                  <button type="button" onclick="DenyCookies()" class="btn btn-light min-width-25 w-100">Refuse</button>
+              </div>
+              <div class="col-sm-4">
+                  <button type="button" onclick="AcceptCookies()" class="btn btn-primary min-width-25 w-100">Accept</button>
+              </div>
           </div>
-          <div class="answer-wrapper">
-            <div class="answer selected">
-              <span class="text">answer</span>
-              <span class="checkbox">
-                <i class="fas fa-check"></i>
-              </span>
-            </div>
-          </div>
-          <button class="btn1 submit" disabled>Submit</button>
-          <button class="btn1 next">Next</button>
-        </div>
-        <div class="end-screen hide">
-          <h1 class="heading">Quiz</h1>
-          <div class="score">
-            <span class="score-text">Your score:</span>
-            <div>
-              <span class="final-score">0</span>
-              <span class="total-score">/10</span>
-            </div>
-          </div>
-          <button class="btn1 restart">Restart</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="/Rajongoi9A-D/js/script1.js"></script>
-    <a href=""> </a>
-    <a href=""> </a>
-  </main>
-
-  <!-- Footer-->
-  <footer class="bg-white py-4 mt-auto">
-    <div class="container1 px-5">
-      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-        <div class="col-auto">
-          <div class="small m-0"><img src="/Rajongoi9A-D/assets/jeglik.jpeg" alt="" height="50px"> &copy; Győri
-            Szakképzési Centrum Jedlik Ányos Gépipari és Informatikai Technikum és Kollégium</div>
-        </div>
-        <div class="col-auto">
-          <a class="small" href="#!">Privacy</a>
-          <span class="mx-1">&middot;</span>
-          <a class="small" href="#!">Terms</a>
-          <span class="mx-1">&middot;</span>
-          <a class="small"
-            href="mailto:marton.matyas@students.jedlik.eu,szeri.martin@students.jedlik.eu,olah.balazs@students.jedlik.eu">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Core theme JS-->
-  <script src="/Rajongoi9A-D/js/scripts.js"></script>
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <!-- * *                               SB Forms JS                               * *-->
-  <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  <!--Cookie banner-->
-  <div class="col-lg-4 bg-white p-3 border border-2 border-primary rounded-4 bg-opacity-90 border-opacity-65 hidden"
-    id="cookieBanner">
-    <div class="row">
-      <div class="col-12">
-        <h3>This website uses cookies.</h3>
-        <p>This website uses cookies to remember your language choice. Please accept the cookies for the full
-          functionality of the website.
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center gap-3">
-      <div class="col-sm-4">
-        <button type="button" onclick='DenyCookies()' class="btn btn-light min-width-25 w-100">Refuse</button>
-      </div>
-      <div class="col-sm-4">
-        <button type="button" onclick='AcceptCookies()' class="btn btn-primary min-width-25 w-100">Accept</button>
-      </div>
-    </div>
   </div>
-  <script src="/Rajongoi9A-D/js/cookie.js"></script>
-  <script src="/Rajongoi9A-D/js/scripts.js"></script>
-</body>
-
+        <script src="/Rajongoi9A-D/js/cookie.js"></script>
+        <script src="/Rajongoi9A-D/js/scripts.js"></script>
+    </body>
 </html>
