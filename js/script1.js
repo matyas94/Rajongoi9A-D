@@ -48,7 +48,7 @@ const showQuestion = (question) => {
     answersWrapper = document.querySelector(".answer-wrapper");
   questionNumber = document.querySelector(".number");
 
-questionText.innerHTML = question.question;
+  questionText.innerHTML = question.question;
 
   const answers = [
     ...question.incorrect_answers,
@@ -67,9 +67,8 @@ questionText.innerHTML = question.question;
         `;
   });
 
-  questionNumber.innerHTML = ` Kérdés  <span class="current">${
-    questions.indexOf(question) + 1
-  }</span>
+  questionNumber.innerHTML = ` Kérdés  <span class="current">${questions.indexOf(question) + 1
+    }</span>
             <span class="total">/${questions.length}</span>`;
   //add event listener to each answer
   const answersDiv = document.querySelectorAll(".answer");

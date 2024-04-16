@@ -1,66 +1,65 @@
-
 {
-    "response_code": 0,
-    "results": [
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Who is Viktor Orbán's best friend?",
-        "correct_answer": "Lőrincz Mészáros",
-        "incorrect_answers": [
-          "Vlagyimir Putyin",
-          "Donald Trump",
-          "Xi Jinping"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "When did he form his first government?",
-        "correct_answer": "1998",
-        "incorrect_answers": [
-          "2002",
-          "1994",
-          "1989"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Which university did he get his doctorate from?",
-        "correct_answer": "ELTE",
-        "incorrect_answers": [
-          "BME",
-          "SZTE",
-          "CORVINUS"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "When did he form his 2nd government?",
-        "correct_answer": "2010",
-        "incorrect_answers": [
-          "2014",
-          "1998",
-          "2008"
-        ]
-      },
-      {
-        "type": "multiple",
-        "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "When did he start to get involved in politics?",
-        "correct_answer": "1988",
-        "incorrect_answers": [
-          "1984",
-          "2002",
-          "1980"
-        ]
-      }
-    ]
-  }
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Who is Viktor Orbán's best friend?",
+      "correct_answer": "Lőrincz Mészáros",
+      "incorrect_answers": [
+        "Vlagyimir Putyin",
+        "Donald Trump",
+        "Xi Jinping"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When did he form his first government?",
+      "correct_answer": "1998",
+      "incorrect_answers": [
+        "2002",
+        "1994",
+        "1989"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "Which university did he get his doctorate from?",
+      "correct_answer": "ELTE",
+      "incorrect_answers": [
+        "BME",
+        "SZTE",
+        "CORVINUS"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When did he form his 2nd government?",
+      "correct_answer": "2010",
+      "incorrect_answers": [
+        "2014",
+        "1998",
+        "2008"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When did he start to get involved in politics?",
+      "correct_answer": "1988",
+      "incorrect_answers": [
+        "1984",
+        "2002",
+        "1980"
+      ]
+    }
+  ]
+}
