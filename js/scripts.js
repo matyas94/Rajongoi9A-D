@@ -4,18 +4,14 @@ function ChLang(lang, destination) {
     if (getCookie("acceptedCookies") == "true") {
         setCookie("language", lang, 180);
     }
-    window.location.replace(Root() + "/" + lang + "/" + destination);
+    window.location.replace("../" + lang + "/" + destination);
 }
 
-function Root() {
-    return location.protocol + '//' + location.host + "/Rajongoi9A-D";
-}
-
-function AutomaticRedirectFromRoot() {
+function RedirectFromIndex() {
     if (getCookie("language") == "English") {
-        window.location.replace(Root() + "/" + "English" + "/" + "mainpage.html");
+        window.location.replace("./English/mainpage.html");
     }
     else {
-        window.location.replace(Root() + "/" + "Magyar" + "/" + "fooldal.html");
+        window.location.replace("./Magyar/fooldal.html");
     }
 }

@@ -6764,12 +6764,12 @@ fieldset:disabled .btn {
 } */
 .carousel-control-prev-icon {
 
-  background-image: url("/Rajongoi9A-D/assets/nyilBalra.svg");
+  background-image: url("../assets/nyilBalra.svg");
 
 }
 
 .carousel-control-next-icon {
-  background-image: url("/Rajongoi9A-D/assets/nyilJobbra.svg");
+  background-image: url("../assets/nyilJobbra.svg");
 }
 
 .carousel-indicators {
